@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Tel - AI Engineer</title>
+    <meta name="description" content="AI Researcher specializing in Machine Learning & Natural Language Processing" />
+    <meta name="author" content="Dr. Alexandra Thompson" />
+    
+    <meta property="og:title" content="Dr. Alexandra Thompson - AI Researcher" />
+    <meta property="og:description" content="AI Researcher specializing in Machine Learning & Natural Language Processing" />
+    <meta property="og:type" content="website" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        border: 'hsl(214.3 31.8% 91.4%)',
+                        card: 'hsl(0 0% 100%)',
+                        'card-foreground': 'hsl(222.2 84% 4.9%)',
+                        popover: 'hsl(0 0% 100%)',
+                        'popover-foreground': 'hsl(222.2 84% 4.9%)',
+                        primary: 'hsl(222.2 47.4% 11.2%)',
+                        'primary-foreground': 'hsl(210 40% 98%)',
+                        secondary: 'hsl(210 40% 96.1%)',
+                        'secondary-foreground': 'hsl(222.2 47.4% 11.2%)',
+                        muted: 'hsl(210 40% 96.1%)',
+                        'muted-foreground': 'hsl(215.4 16.3% 46.9%)',
+                        accent: 'hsl(210 40% 96.1%)',
+                        'accent-foreground': 'hsl(222.2 47.4% 11.2%)',
+                        destructive: 'hsl(0 84.2% 60.2%)',
+                        'destructive-foreground': 'hsl(210 40% 98%)',
+                        ring: 'hsl(222.2 84% 4.9%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tooltip {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 1;
+            transition: opacity 0.3s;
+        }
+        
+        .tooltip::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #1f2937 transparent transparent transparent;
+        }
+        
+        .tooltip-container:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .contact-link {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <!-- Profile Picture -->
+            <div class="mb-8">
+                <img
+                    src="https://media.licdn.com/dms/image/v2/C4D03AQFT1hgEb9SXbg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1546893367271?e=1754524800&v=beta&t=vBW02A54cB6ZP5imnp0yUHpoMbkVX48bWumY4ehjemY"
+                    alt="Dr. Alexandra Thompson"
+                    class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-white shadow-lg ring-4 ring-blue-100"
+                />
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+                <a href="./index.html">Steven Tel</a>
+            </h1>
+            <p class="text-xl text-gray-700 font-light mb-8">
+                AI Engineer, PhD — Computer Vision & Natural Language Processing
+            </p>
+            
+            <!-- Contact Links -->
+            <div class="flex justify-center gap-4">
+                <!-- Email -->
+                <div class="tooltip-container relative">
+                    <a href="mailto:m.steventel@gmail.com" 
+                       class="contact-link flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 bg-white shadow-md hover:bg-red-50 hover:border-red-300 hover:text-red-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </a>
+                    <span class="tooltip">Send me an email</span>
+                </div>
+                
+                <!-- GitHub -->
+                <div class="tooltip-container relative">
+                    <a href="https://github.com/steven-tel" target="_blank" rel="noopener noreferrer"
+                       class="contact-link flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 bg-white shadow-md hover:bg-gray-50 hover:border-gray-400 hover:text-gray-800">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <span class="tooltip">View my GitHub profile</span>
+                </div>
+                
+                <!-- Google Scholar -->
+                <div class="tooltip-container relative">
+                    <a href="https://scholar.google.com/citations?user=OhVOZ8oAAAAJ&hl" target="_blank" rel="noopener noreferrer"
+                       class="contact-link flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 bg-white shadow-md hover:bg-blue-50 hover:border-blue-300 hover:text-blue-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </a>
+                    <span class="tooltip">See my publications on Google Scholar</span>
+                </div>
+                
+                <!-- LinkedIn -->
+                <div class="tooltip-container relative">
+                    <a href="https://linkedin.com/in/steventel" target="_blank" rel="noopener noreferrer"
+                       class="contact-link flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 bg-white shadow-md hover:bg-blue-50 hover:border-blue-400 hover:text-blue-700">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <span class="tooltip">Connect with me on LinkedIn</span>
+                </div>
+                
+                <!-- CV -->
+                <div class="tooltip-container relative">
+                    <a href="./resume.html"
+                       class="contact-link flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 bg-white shadow-md hover:bg-green-50 hover:border-green-300 hover:text-green-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </a>
+                    <span class="tooltip">Download my Resume</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- PDF Viewer Section -->
+        <section class="mb-16">
+            <div class="rounded-lg border bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden">
+                <iframe 
+                    src="cv.pdf"
+                    class="w-full h-[800px]"
+                    type="application/pdf"
+                >
+                    <p>Your browser doesn't support embedded PDFs. You can <a href="/cv.pdf" class="text-blue-600 hover:text-blue-800">download the PDF here</a>.</p>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center ">
+            <p class="text-gray-500 text-sm">
+                © 2025 Steven Tel. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
